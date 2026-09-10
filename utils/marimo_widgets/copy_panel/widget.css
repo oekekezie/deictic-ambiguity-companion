@@ -1,0 +1,92 @@
+/**
+ * Copy Panel Widget: styles.
+ *
+ * Light-mode only, deliberately matching the notebooks' .stim-card aesthetic
+ * (see cell_inspector.py's stim_card_css). Every existing ReFT notebook is
+ * light-mode, so theme detection is intentionally omitted.
+ */
+
+.copy-panel-widget {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.copy-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px 6px 14px;
+  background: #eef2ff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.copy-panel-label {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #3730a3;
+}
+
+.copy-panel-button {
+  flex-shrink: 0;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #3730a3;
+  background: #ffffff;
+  border: 1px solid #c7d2fe;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+.copy-panel-button:hover {
+  background: #e0e7ff;
+}
+
+.copy-panel-button:active {
+  background: #c7d2fe;
+}
+
+.copy-panel-button--ok {
+  color: #065f46;
+  background: #d1fae5;
+  border-color: #6ee7b7;
+}
+
+.copy-panel-button--err {
+  color: #991b1b;
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+.copy-panel-body {
+  margin: 0;
+  padding: 14px;
+  max-height: 420px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", monospace;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #111827;
+  background: #f9fafb;
+}
+
+.copy-panel-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.copy-panel-body::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.copy-panel-body::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

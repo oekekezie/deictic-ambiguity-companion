@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+__marimo__/
+.env
+*.env
+/batch_inference/
+.DS_Store
+/regenerated/

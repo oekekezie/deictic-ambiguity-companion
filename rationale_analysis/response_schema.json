@@ -1,0 +1,113 @@
+{
+  "type": "object",
+  "properties": {
+    "misattributed_scenario_current_value": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Quote any statement the rationale makes about the current value (or note it makes none), compare it to the Scenario, then explain whether it is misreported."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    },
+    "misattributed_scenario_historical_value": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Quote any statement the rationale makes about the historical value (or note it makes none), compare it to the Scenario, then explain whether it is misreported."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    },
+    "misattributed_scenario_proposed_value": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Quote any statement the rationale makes about the proposed value (or note it makes none), compare it to the Scenario, then explain whether it is misreported."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    },
+    "misattributed_assistant_fallback_value": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Quote what the rationale says the assistant's draft cited as its fallback (or note it makes no such claim), compare it to the Scenario's stated fallback citation, then explain whether the rationale misreported it."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    },
+    "misattributed_grader_claim": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Quote how the rationale characterizes the grader's claim (or note it makes no such characterization), compare it to the verbatim Grader's Feedback, then explain whether the rationale misrepresented it."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    },
+    "articulated_operational_interpretation": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Cite the relevant passages from the meta-evaluator's rationale verbatim, then explain whether the meta-evaluator's rationale articulated the operational interpretation."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    },
+    "operational_interpretation_governed_judgment": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Cite the relevant passages from the meta-evaluator's rationale verbatim, then explain whether the operational interpretation governed the meta-evaluator's judgment."
+        },
+        "classification": {
+          "type": "boolean"
+        }
+      },
+      "required": ["analysis", "classification"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "misattributed_scenario_current_value",
+    "misattributed_scenario_historical_value",
+    "misattributed_scenario_proposed_value",
+    "misattributed_assistant_fallback_value",
+    "misattributed_grader_claim",
+    "articulated_operational_interpretation",
+    "operational_interpretation_governed_judgment"
+  ],
+  "additionalProperties": false
+}

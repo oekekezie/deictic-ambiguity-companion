@@ -1,0 +1,66 @@
+[project]
+name = "deictic-ambiguity-companion"
+version = "1.0.0"
+description = "Companion dataset and code for the paper \"Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity?\""
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.52.0",
+    "anywidget>=0.11.0",
+    "google-genai>=1.61.0",
+    "httpx>=0.28.0",
+    "jinja2>=3.1.6",
+    "jsonschema>=4.0",
+    "kaleido>=1.2.0",
+    "marimo>=0.19.7",
+    "openai>=2.16.0",
+    "pillow>=12.1.1",
+    "plotly>=6.6.0",
+    "pydantic>=2.11.0",
+    "python-dotenv>=1.2.1",
+    "tiktoken>=0.12.0",
+    "traitlets>=5.14.3",
+    "transformers>=5.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "nbconvert>=7.17.0",
+    "nbformat>=5.10.4",
+    "playwright>=1.58.0",
+    "pypdf>=6.14.2",
+    "pytest>=9.0",
+    "pytest-asyncio>=0.25.0",
+    "ruff>=0.14.14",
+]
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+addopts = [
+    "-ra",
+    "-q",
+    "--strict-markers",
+    "--import-mode=importlib",
+    "--tb=short",
+]
+asyncio_mode = "auto"
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: tests requiring the large pinned snapshot artifacts under analysis_outputs/",
+    "slow: tests running an external toolchain (e.g. a full pdflatex compile)",
+]
+filterwarnings = [
+    "error",
+]
+
+[tool.marimo.runtime]
+pythonpath = ["."]
+
+[tool.marimo.language_servers.pylsp]
+enabled = true               # Enable/disable the Python language server
+enable_ruff = true           # Linting with ruff (enabled by default, if installed)
+
+# Diagnostics configuration
+[tool.marimo.diagnostics]
+enabled = true               # Show diagnostics in the editor

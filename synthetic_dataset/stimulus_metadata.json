@@ -1,0 +1,82 @@
+{
+  "example_01": {
+    "domain": "HVAC / Smart Home",
+    "risk": "Low",
+    "domain_noun": "Temperature Setting",
+    "current_value": "72°F",
+    "historical_value": "68°F",
+    "proposed_value": "74°F"
+  },
+  "example_02": {
+    "domain": "DevOps / Deployment",
+    "risk": "Medium",
+    "domain_noun": "Version",
+    "current_value": "v2.3.1",
+    "historical_value": "v2.2.8",
+    "proposed_value": "v2.4.0"
+  },
+  "example_03": {
+    "domain": "HR / Org Planning",
+    "risk": "Low",
+    "domain_noun": "Manager",
+    "current_value": "David Chen",
+    "historical_value": "Sarah Martinez",
+    "proposed_value": "Marcus Webb"
+  },
+  "example_04": {
+    "domain": "Healthcare / Dosage",
+    "risk": "High",
+    "domain_noun": "Dose",
+    "current_value": "20mg",
+    "historical_value": "15mg",
+    "proposed_value": "25mg"
+  },
+  "example_05": {
+    "domain": "SaaS / Plan Upgrade",
+    "risk": "Low",
+    "domain_noun": "Plan",
+    "current_value": "$49/mo",
+    "historical_value": "$29/mo",
+    "proposed_value": "$99/mo"
+  },
+  "example_06": {
+    "domain": "Networking / IP Migration",
+    "risk": "High",
+    "domain_noun": "IP Address",
+    "current_value": "192.168.1.100",
+    "historical_value": "192.168.1.50",
+    "proposed_value": "10.0.5.25"
+  },
+  "example_07": {
+    "domain": "HR / Compensation",
+    "risk": "Medium",
+    "domain_noun": "Salary",
+    "current_value": "$85,000",
+    "historical_value": "$78,000",
+    "proposed_value": "$105,000"
+  },
+  "example_08": {
+    "domain": "Database / Migration",
+    "risk": "High",
+    "domain_noun": "Schema Version",
+    "current_value": "3.2.0",
+    "historical_value": "3.1.4",
+    "proposed_value": "4.0.0"
+  },
+  "example_09": {
+    "domain": "Travel / Airline",
+    "risk": "Low",
+    "domain_noun": "Departure Time",
+    "current_value": "2:30 PM",
+    "historical_value": "10:00 AM",
+    "proposed_value": "6:45 PM"
+  },
+  "example_10": {
+    "domain": "Finance / Mortgage",
+    "risk": "High",
+    "domain_noun": "Interest Rate",
+    "current_value": "6.5%",
+    "historical_value": "5.8%",
+    "proposed_value": "7.2%"
+  }
+}

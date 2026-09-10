@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "rationale": {
+      "type": "string",
+      "description": "Rationale for whether the grader's feedback was correct or incorrect."
+    },
+    "score": {
+      "type": "string",
+      "description": "Was the grader's feedback correct? 'correct' means the grader was right; 'incorrect' means the grader was wrong.",
+      "enum": [
+        "correct",
+        "incorrect"
+      ]
+    }
+  },
+  "required": [
+    "rationale",
+    "score"
+  ],
+  "additionalProperties": false
+}

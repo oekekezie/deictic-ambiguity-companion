@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it. The Zenodo DOI and the arXiv identifier of the accompanying paper will be added once they exist."
+type: software
+title: "Companion dataset and code for \"Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity?\""
+authors:
+  - family-names: "Ekekezie"
+    given-names: "Obinna I."
+license: MIT
+repository-code: "https://github.com/oekekezie/deictic-ambiguity-companion"

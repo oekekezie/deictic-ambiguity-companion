@@ -1,6 +1,6 @@
 # Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity? — Companion Repository
 
-Companion dataset and code for the paper "Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity?" by Obinna I. Ekekezie, M.D. The manuscript will be available on arXiv; the link will be added here once it is live. This repository contains the synthetic stimuli, the pinned analysis snapshots of record, and the code and notebooks that regenerate the paper's figures and tables.
+Companion dataset and code for the paper "Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity?" by Obinna I. Ekekezie, M.D. The manuscript is on arXiv as [arXiv:2609.12162](https://arxiv.org/abs/2609.12162). This repository contains the synthetic stimuli, the pinned analysis snapshots of record, and the code and notebooks that regenerate the paper's figures and tables.
 
 ## What this repository contains
 
@@ -98,8 +98,8 @@ uv run marimo edit marimo_notebooks/
 
 ## Citation
 
-- Paper: arXiv (the link will be added here once the listing is live). The paper pins the exact release it reports by citing that release's Zenodo version DOI.
-- Repository: `CITATION.cff` carries the citation metadata, which GitHub's "Cite this repository" button renders. The Zenodo DOI will be added once the release is archived.
+- Paper: [arXiv:2609.12162](https://arxiv.org/abs/2609.12162). It pins the exact release it reports by citing that release's Zenodo version DOI.
+- Repository: `CITATION.cff` carries the repository's citation metadata, including the Zenodo DOI `10.5281/zenodo.22133378`, which always resolves to the latest release. Its `preferred-citation` block names the paper, so GitHub's "Cite this repository" button emits the paper rather than the repository.
 
 ## License
 
